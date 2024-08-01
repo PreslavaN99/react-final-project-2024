@@ -10,7 +10,7 @@ const NavBar = () => {
             <NavLink to={'/'} className={({isActive}) => "" + (isActive ? "active" : "")}>
                 <li className={'navbar'}> Home <i className="fas fa-home"></i></li>
             </NavLink>
-            <NavLink to={'/joke-add'}
+            <NavLink to={'/animal-add'}
                      className={({isActive}) => "" + (isActive ? "active" : "")}>
                 <li className={'navbar'}
                 > Add animal <i className="fas fa-plus-square"></i></li>
@@ -21,10 +21,10 @@ const NavBar = () => {
             <NavLink to={'/find-all'} className={({isActive}) => "" + (isActive ? "active" : "")}>
                 <li className={'navbar'}> All animals <i className="fas fa-puzzle-piece"></i></li>
             </NavLink>
-            <NavLink to={'/joke-find'} className={({isActive}) => "" + (isActive ? "active" : "")}>
+            <NavLink to={'/animal-find'} className={({isActive}) => "" + (isActive ? "active" : "")}>
                 <li className={'navbar'}> Find animal <i className="fas fa-puzzle-piece"></i></li>
             </NavLink>
-            <NavLink to={`/joke-manage`} className={({isActive}) => "" + (isActive ? "active" : "")}>
+            <NavLink to={`/animal-manage`} className={({isActive}) => "" + (isActive ? "active" : "")}>
                 <li className={'navbar'}> Manage my animals <i className="fas fa-tasks"></i></li>
             </NavLink>
             <NavLink to={'/logout'}>
