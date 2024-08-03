@@ -1,0 +1,40 @@
+.main-section {
+    background: #FFE8D6;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100ch;
+    word-break: break-all;
+}
+
+.property {
+    font-size: 1.2em;
+    font-weight: bold;
+    min-width: 100%;
+    font-family: "Droid Serif", Serif, serif;
+    line-height: 1.4;
+}
+
+.link {
+    padding: 10px;
+    border-radius: 30px;
+    background: #6B705C;
+    width: fit-content;
+    color: black;
+}
+
+.link:hover {
+    background: #A5A58D;
+    color: white;
+}
+
+.title {
+    border-bottom: 3px solid #6B705C;
+}
+
+.content {
+    margin: 20px;
+}
