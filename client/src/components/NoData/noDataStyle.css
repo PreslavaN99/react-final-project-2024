@@ -1,0 +1,39 @@
+.data {
+    color: lightgoldenrodyellow;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px;
+    border-bottom: 3px solid black;
+}
+
+.data > p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.data-link {
+    .create-animal-button {
+        color: #DDBEA9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        padding: 20px;
+        border: 2px solid #DDBEA9;
+        background: transparent;
+        border-radius: 15px;
+        font-size: 24px;
+    }
+}
+
+.data-link:hover {
+    cursor: pointer;
+    background-color: #6B705C;
+    color: black;
+
+}

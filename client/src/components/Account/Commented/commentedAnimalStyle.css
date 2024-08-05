@@ -1,0 +1,21 @@
+.commented-wrap {
+    background-color: lightgoldenrodyellow;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.commented-title {
+    color: orange;
+    font-weight: bolder;
+}
+
+.commented-link {
+    color: darkorange;
+}
+
+.commented-link:hover {
+    color: green;
+}

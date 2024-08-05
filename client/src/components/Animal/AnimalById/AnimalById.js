@@ -13,7 +13,7 @@ const AnimalById = () => {
     let [dbError, setDbError] = useState([]);
     let navigate = useNavigate();
     let [names, setNames] = useState({username: '', user: ''})
-    useEffect(() => {Animal(id.id)
+    useEffect(() => {animal(id.id)
             .then(res => res.json())
             .then(data => {
                 setNames({username: sessionStorage.getItem('authenticatedUser'), user: data.creator})

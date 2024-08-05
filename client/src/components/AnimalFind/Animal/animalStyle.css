@@ -1,0 +1,167 @@
+.add-comment-wrap {
+    background: #FFE8D6;
+    margin: 60px auto;
+    width: 90%;
+    padding: 30px;
+    align-items: center;
+    border-radius: 30px;
+    border: 3px solid #6B705C;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-comment-wrap label {
+    color: #B7B7A4;
+    font-weight: bold;
+    font-size: 30px;
+    border-bottom: 3px solid #B7B7A4;
+    margin: 20px;
+}
+
+.add-comment-wrap textarea {
+    width: 70%;
+    border-radius: 10px;
+    padding: 15px;
+    border: 3px solid #B7B7A4;
+}
+
+.add-comment-wrap button {
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 20px;
+    border: 3px solid #B7B7A4;
+}
+
+.add-comment-wrap button:hover {
+    cursor: pointer;
+    background: #6B705C;
+}
+
+.read-title, .read-keyword {
+    background: white;
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    width: auto;
+    border: 3px solid #B7B7A4;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.read-content {
+    background: white;
+    margin: 10px;
+    padding: 30px;
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+    word-break: break-word;
+    border: 3px solid #B7B7A4;
+}
+
+.read-head {
+    text-align: center;
+    color: #6B705C;
+    font-size: 40px;
+}
+
+.wrap > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.creator {
+    margin: 10px;
+    font-size: 20px;
+    border-bottom: 3px solid #6B705C;
+}
+
+.comments {
+    margin: 40px 80px;
+}
+
+.delete-comment {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #FFE8D6;
+    font-size: 15px;
+    width: fit-content;
+
+}
+
+.delete-comment {
+    color: black;
+}
+
+.delete-comment:hover {
+    cursor: pointer;
+    color: #CB997E;
+    background: black;
+}
+
+.button-like {
+    padding: 5px;
+    border: 3px solid #FFE8D6;
+    background: white;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.button-like:hover {
+    cursor: pointer;
+    background: #CB997E;
+}
+
+.all-ready-liked {
+    margin: 15px;
+}
+
+.likes {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.added {
+    border-top: 3px solid #CB997E;
+    margin: 15px;
+}
+
+.all-jokes {
+    padding: 10px 20px;
+    background-color: #CB997E;
+    /*width: 30vw;*/
+    /*border-bottom-right-radius: 30px;*/
+    /*border-top-right-radius: 30px;*/
+    /*border-bottom-left-radius: 30px;*/
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.link-all {
+    font-size: 30px;
+    color: #CB997E;
+}
+
+.div-comments {
+    line-height: 1.7;
+}
+
+.all-jokes:hover {
+    background-color: #CB997E;
+    color: white;
+}
+
+.content-data {
+    color: #CB997E;
+    font-weight: bolder;
+    margin: 5px;
+}
