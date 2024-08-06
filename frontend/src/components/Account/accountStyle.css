@@ -1,0 +1,87 @@
+.wrap-cards {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 40px;
+}
+
+.wrap-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.futura {
+    font-family: Futura, sans-serif;
+}
+
+.profile {
+    background: #FFE8D6;
+    padding: 30px;
+    margin: 20px;
+    font-size: 35px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+
+}
+
+.fav {
+    background-color: #FFE8D6;
+    border-radius: 30px;
+}
+
+.pad {
+    margin: 20px 20px 50px;
+}
+
+.title-fav {
+    color: black;
+    border-bottom: 3px solid #6B705C;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.fav-no {
+    margin: 20px;
+    width: 69vw;
+    text-align: center;
+}
+
+.div-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.account-data {
+    color: #6B705C;
+}
+
+.wrap-commented-animals {
+    background-color: #FFE8D6;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    width: 70%;
+}
+
+.commented-animals-head {
+    text-align: center;
+    color: black;
+    border-bottom: 3px solid #6B705C;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.commented-animals {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
