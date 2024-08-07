@@ -92,14 +92,14 @@ const Account = () => {
               className={'account-data'}>Roles:</span> {roles}</p>
         </div>
         <div className={'div-buttons'}>
-          <Link className={'link pad'} to={'/Animal-add'}>Create Animal here <i
+          <Link className={'link pad'} to={'/animal-add'}>Create Animal here <i
               className="fas fa-greater-than"></i></Link>
-          <Link className={'link pad'} to={'/Animal-find'}>Find Animals here <i
+          <Link className={'link pad'} to={'/animal-find'}>Find Animals here <i
               className="fab fa-searchengin"></i></Link>
         </div>
-        <div className={'wrap-commented-Animals'}>
-          <p className={'commented-Animals-head'}>Commented Animals by you </p>
-          <section className={'commented-Animals'}>
+        <div className={'wrap-commented-animals'}>
+          <p className={'commented-animals-head'}>Commented Animals by you </p>
+          <section className={'commented-animals'}>
             {commentedAnimals.length ?
                 commentedAnimals.map(
                     (x, id) => <CommentedAnimal key={++id} animal={x}/>)

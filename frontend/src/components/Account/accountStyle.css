@@ -30,6 +30,10 @@
 }
 
 .fav {
+   padding: 20px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
     background-color: #FFE8D6;
     border-radius: 30px;
 }
@@ -39,6 +43,7 @@
 }
 
 .title-fav {
+    align-self: center;
     color: black;
     border-bottom: 3px solid #6B705C;
     font-weight: bolder;
