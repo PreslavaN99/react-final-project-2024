@@ -70,9 +70,12 @@ const AnimalAdd = () => {
                         />
 
                         <label>Species:</label>
-                        <textarea className={'animal-add-species'}
-                                  name='species'
-                                  placeholder='cat'/>
+
+                        <select className={'animal-add-species'}>
+                            <option value="cat">cat</option>
+                            <option value="dog">dog</option>
+                            <option value="other">other</option>
+                        </select>
 
                         <label>Info:</label>
                         <textarea className={'animal-add-info'}
@@ -80,10 +83,10 @@ const AnimalAdd = () => {
                                   placeholder='Pesho is a gentle explorer.He enjoys sunbathing by the window, chasing feather toys, and curling up in cozy corners.'/>
 
                         <div>
-                                <label className={'add-img'}>
-                                    <input type="file" onChange={handleFileChange} accept=".jpg,.jpeg,.png,.gif"/>
-                                    Add Image
-                                </label>
+                            <label className={'add-img'}>
+                                <input type="file" onChange={handleFileChange} accept=".jpg,.jpeg,.png,.gif"/>
+                                Add Image
+                            </label>
                         </div>
 
                         <button className={'create-animal-button'} type='submit'>Create</button>
