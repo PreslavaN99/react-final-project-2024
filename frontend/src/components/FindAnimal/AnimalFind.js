@@ -1,5 +1,5 @@
 import './animalFindStyle.css';
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {getAnimalByMostLikes, getAnimalsFromDbByspecies, getLastThreeAnimals} from "../../api/service/AnimalService";
 import {Link} from "react-router-dom";
 import ResetScroll from "../../api/ResetScroll/ResetScroll";
@@ -44,25 +44,25 @@ const AnimalFind = () => {
 
     return (
         <>
-            <h1>Find Animals and fun stories</h1>
+            <h1>Find your new friend</h1>
             {mostLiked ?
                 <div className={'most-liked'}>
-                    <p>Check the most liked Animal:</p>
+                    <p>Check the most liked аnimal:</p>
                     <ul className={'ul-usernames'}>{mostLiked.map(x =>
                         <li key={x.id} className={'li-usernames best-animal'}>
-                            <Link className={'animal-read-link'} to={`/animal-read/${x.id}`}>Name: {x.name}</Link>
+                            <Link className={'animal-read-link'} to={`/animal-read/${x.id}`}> {x.name}</Link>
                         </li>)}</ul>
                 </div>
                 : 'Not enough likes'}
 
             <section className={'all-Animals'}>
-                <Link className={'link-all'} to={'/find-all'}> <i className="fas fa-list"></i> Here can view all
-                    Animals</Link>
+                <Link className={'link-all'} to={'/find-all'}>  Here can view all
+                    аnimals</Link>
             </section>
 
             <div className={'search-keyword-wrap'}>
                 <div className={'div-search-keyword-wrap'}>
-                    <label className={'label'}>Find by keyword</label>
+                    <label className={'label'}>Find by species</label>
                     <input className={'input-keyword-search'} name='keyword' onKeyUp={getAnimalsByKeyword}/>
 
                 </div>

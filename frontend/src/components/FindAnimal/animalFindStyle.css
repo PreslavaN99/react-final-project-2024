@@ -1,6 +1,6 @@
 .search-keyword-wrap {
     padding: 30px;
-    background: lightgoldenrodyellow;
+    background: #FFE8D6;
     border-radius: 30px;
     width: 50%;
     margin: 20px auto;
@@ -15,7 +15,7 @@
 }
 
 .div-search-keyword-wrap > label {
-    color: orange;
+    color: #6B705C;
     font-size: 30px;
 }
 
@@ -26,7 +26,8 @@
 }
 
 .search-keyword-wrap li {
-    background: orange;
+    background: #6B705C;
+    color: black;
 }
 
 .animal-read-link {
@@ -40,11 +41,10 @@
 
 
 .lastThree {
-    border-left: 5px solid orange;
     margin-right: auto;
     margin-left: auto;
-    width: 80%;
-    margin-bottom: 50px;
+    width: 40%;
+    margin-bottom: 20px;
 }
 
 .most-liked {
@@ -52,21 +52,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: lightgoldenrodyellow;
+    background: #FFE8D6;
     margin: 10px 0px;
 }
 
 
 .most-liked > p {
-    color: orange;
+    color: #6B705C;
     font-size: 30px;
 }
 
 .best-animal {
-    background: orange;
+    background-color: #A5A58D;
 }
 
 .best-animal:hover {
-    background: green;
+    background-color: #CB997E;
     color: white;
 }

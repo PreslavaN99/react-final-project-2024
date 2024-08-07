@@ -147,8 +147,17 @@
 }
 
 .link-all {
+    background-color: #FFE8D6;
     font-size: 30px;
-    color: #CB997E;
+    color: #6B705C;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-all:hover{
+    background-color: #CB997E;
+    color: white;
 }
 
 .div-comments {

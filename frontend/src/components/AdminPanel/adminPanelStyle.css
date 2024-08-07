@@ -35,9 +35,8 @@
     flex-direction: row;
     margin: 5px;
 }
-
 .li-usernames:hover {
-    background-color: green;
+    background-color: #CB997E;
 }
 
 .ul-usernames {
@@ -49,9 +48,9 @@
 
 .p-fetch-usernames {
     align-content: center;
-    color: orange;
+    color: #6B705C;
     font-size: 40px;
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #6B705C;
     margin: 20px;
 }
 
