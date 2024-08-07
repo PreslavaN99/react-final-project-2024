@@ -5,16 +5,15 @@
     padding: 30px;
     align-items: center;
     border-radius: 30px;
-    border: 3px solid #6B705C;
+    border: 3px solid #CB997E;
     display: flex;
     flex-direction: row;
 }
 
 .add-comment-wrap label {
-    color: #B7B7A4;
+    color: #6B705C;
     font-weight: bold;
     font-size: 30px;
-    border-bottom: 3px solid #B7B7A4;
     margin: 20px;
 }
 
@@ -22,7 +21,7 @@
     width: 70%;
     border-radius: 10px;
     padding: 15px;
-    border: 3px solid #B7B7A4;
+    border: 3px solid #6B705C;
 }
 
 .add-comment-wrap button {
@@ -30,12 +29,15 @@
     border-radius: 20px;
     margin: 20px;
     font-size: 20px;
-    border: 3px solid #B7B7A4;
+    border: none;
+    background-color: #6B705C;
 }
 
 .add-comment-wrap button:hover {
     cursor: pointer;
-    background: #6B705C;
+    background: #CB997E;
+    color: white;
+
 }
 
 .read-title, .read-keyword {
@@ -87,7 +89,7 @@
 .delete-comment {
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 5px 30px;
     background: #FFE8D6;
     font-size: 15px;
     width: fit-content;
@@ -96,12 +98,15 @@
 
 .delete-comment {
     color: black;
+    background-color: #6B705C;
+    border-radius: 15px;
+    border: none;
 }
 
 .delete-comment:hover {
     cursor: pointer;
-    color: #CB997E;
-    background: black;
+    color: white;
+    background: #CB997E;
 }
 
 .button-like {
@@ -135,10 +140,6 @@
 .all-animals {
     padding: 10px 20px;
     background-color: #CB997E;
-    /*width: 30vw;*/
-    /*border-bottom-right-radius: 30px;*/
-    /*border-top-right-radius: 30px;*/
-    /*border-bottom-left-radius: 30px;*/
     align-items: center;
     align-content: center;
     text-align: center;
@@ -155,7 +156,8 @@
     justify-content: center;
     align-items: center;
 }
-.link-all:hover{
+
+.link-all:hover {
     background-color: #CB997E;
     color: white;
 }
@@ -173,4 +175,19 @@
     color: #CB997E;
     font-weight: bolder;
     margin: 5px;
+}
+
+.read-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #CB997E;
+    border-radius: 15px;
+    background-color: #FFE8D6;
+    padding: 20px 10px;
+    margin: 20px 20px 20px 0;
+}
+
+.info-data {
+    padding: 5  px;
 }

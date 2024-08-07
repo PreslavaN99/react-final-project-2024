@@ -28,7 +28,7 @@ const AdminPanel = () => {
 
     return (
         <>
-            <h1>Manage very important things</h1>
+            <h1>Manage users</h1>
             {error ? <p className={'error-admin'}>{error}</p> : ''}
             <div className={'wrap-role-manage'}>
                 <AddAdminRole fetchUsers={fetchUsers} setError={setError}/>
