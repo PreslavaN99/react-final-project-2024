@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -26,7 +27,7 @@ public class CommentService {
 
   public List<Animal> getCommentedAnimalByUsername(String username) {
     List<Animal> animals = new ArrayList<>();
-    List<String> ids = this.commentRepository.findAnimalIdsByCommentsByUsername(username);
+    Set<String> ids = this.commentRepository.findAnimalIdsByCommentsByUsername(username);
     for (String id : ids) {
       Animal byId = this.animalRepository.findById(id).get();
       animals.add(byId);
