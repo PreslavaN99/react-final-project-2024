@@ -1,36 +1,39 @@
 .animal-card {
     width: 30%;
-    padding: 10px;
-    border: 3px solid orange;
-    margin: 10px;
+    padding: 25px;
+    border: 3px solid #FFE8D6;
+    margin: 20px;
     font-size: 1.2rem;
     line-height: 2;
 }
 
 .animal-card-link {
     color: black;
-    padding: 10px 20px;
-    margin-top: 40px;
+    padding:10px;
+    position: relative;
+    top: 15px;
+    left: 30%;
     font-size: 1.5rem;
-    background-color: orange;
+    background-color: #A5A58D;
     font-weight: bolder;
+    border-radius: 15px;
     font-family: Futura, serif;
 }
 
 .animal-card-link:hover {
-    background-color: pink;
-    border-radius: 30px;
+    background-color: #CB997E;
+    color: white;
 }
 
 .animal-card-data {
 
     font-family: "American Typewriter", serif;
-    color: lightblue;
+    color: #FFE8D6;
     word-break: break-word;
 }
 
 .comment {
-    color: orange;
+    color: #FFE8D6;
     margin: 10px 30px;
 }
 
@@ -42,7 +45,7 @@
     margin-left: auto;
     margin-right: auto;
     transform: translate(0%, 100%);
-    background-color: lightblue;
+    background-color: #FFE8D6;
     color: black;
     padding: 20px;
     line-height: 1.5;

@@ -9,8 +9,8 @@ const AnimalBaseCard = ({animal, id}) => {
         display: false
     });
 
-    const changeR = (e) => e.target.style.color = 'red';
-    const changeL = (e) => e.target.style.color = 'lightblue';
+    const changeR = (e) => e.target.style.color = '#CB997E';
+    const changeL = (e) => e.target.style.color = '#FFE8D6';
 
     const hide = () => setComments({display: false});
     const show = () => setComments({display: true});
