@@ -189,5 +189,18 @@
 }
 
 .info-data {
-    padding: 5  px;
+    padding: 5px;
+}
+
+.want-to-adopt-div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    color: black;
+    border: 3px solid #6B705C;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+
 }

@@ -35,7 +35,6 @@ const Animal = () => {
         getAnimalById(id.id)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setAnimal(data);
 
                 let isOwner = data.createdBy === username;
@@ -73,7 +72,6 @@ const Animal = () => {
         findAllUsersWhoWantToAdoptByAnimalId(animal.id)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setAnimalUsers(data)
             })
             .catch(err => err)
@@ -220,10 +218,11 @@ const Animal = () => {
                     <div>
                         <p>People who wanted to adopt the animal:</p>
                         {animalUsers ? animalUsers.map(a =>
-                                <div key={a}>
+                                <div className={'want-to-adopt-div'} key={a}>
                                     <p>Name: {a.username}</p>
                                     <p>Email: {a.email}</p>
                                 </div>)
+
                             :
                             <p>Animal still don't have users in wishlist for adopt</p>
                         }
