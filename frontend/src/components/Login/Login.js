@@ -28,7 +28,6 @@ const Login = ({onLogin}) => {
         authenticationService
             .authJwtService(username, password)
             .then((response) => {
-                console.log(response.data)
                 authenticationService.login(username, response.data.token);
 
                 let decoded = jwtDecode(response.data.token);

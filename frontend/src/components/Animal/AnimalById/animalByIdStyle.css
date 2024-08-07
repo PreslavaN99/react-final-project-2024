@@ -32,7 +32,8 @@
 }
 
 .button-animal-edit {
-    margin: 20px;
+    font-size: 1.2rem;
+    margin: 30px;
     padding: 10px 30px;
     border-radius: 30px;
     border: 3px solid #CB997E;
@@ -52,4 +53,8 @@
     border-radius: 20px 30px;
     text-align: center;
     width: fit-content;
+}
+
+.edit-save {
+    margin-top: 10px    ;
 }

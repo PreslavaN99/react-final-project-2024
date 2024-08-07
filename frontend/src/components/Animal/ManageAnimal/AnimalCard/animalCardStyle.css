@@ -46,7 +46,8 @@
 }
 
 .image {
-  border: 10px solid black;
+  border: 10px solid #A5A58D;
+  border-radius: 30px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;

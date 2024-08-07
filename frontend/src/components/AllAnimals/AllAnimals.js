@@ -12,7 +12,6 @@ const AllAnimal = () => {
         getAllAnimal()
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 setAnimals(data);
             })
             .catch(err => err);

@@ -85,21 +85,21 @@ const AnimalById = () => {
                     .map(x => <div key={x} className={"warnings-edit"}>{x.replaceAll(/[\\[\]]/g, '')}</div>) : ''}
 
                 <div className={'wrap'}>
-                    <label className={'read-head'}>name</label>
-                    <input className={'edit-input name-edit'} name='name'
+                    <label className={'read-head'}>Name</label>
+                    <input className={'edit-input title-edit'} name='name'
                            defaultValue={animal.name}/>
-                    <label className={'read-head'}>species</label>
+                    <label className={'read-head'}>Species</label>
                     <p>You can choose between cat, dog, others like species.</p>
-                    <input className={'edit-input species'} name='species'
+                    <input className={'edit-input keyword'} name='species'
                            defaultValue={animal.species}/>
-                    <label className={'read-head'}>info</label>
-                    <textarea className={'edit-input info-edit'} name='info'
+                    <label className={'read-head'}>Info</label>
+                    <textarea className={'edit-input content-edit'} name='info'
                               defaultValue={animal.info}/>
 
                     <img src={animal.imageUrl} className={'image'}
                          alt={"picture-animal"}/>
                     <div>
-                        <label className={'add-img'}>
+                        <label className={'button-animal-edit'}>
                             <input type="file" onChange={handleFileChange}
                                    accept=".jpg,.jpeg,.png,.gif"/>
                             Change Image

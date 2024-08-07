@@ -13,7 +13,6 @@ export function onCreate(form) {
 
 export function onAddComment({info, animalId, ownerOfComment}) {
   let comment = {info, animalId, ownerOfComment};
-  console.log(comment)
   return fetch(`${API_URL}/add/comment/:${animalId}`, {
     method: 'POST',
     body: JSON.stringify(comment),
@@ -65,8 +64,6 @@ export function getAnimalById(id) {
 }
 
 export function editAnimalById(form, id) {
-  console.log(form)
-  console.log(id)
   return fetch(`${API_URL}/animal/:${id}`,
       {
         method: 'PUT',
