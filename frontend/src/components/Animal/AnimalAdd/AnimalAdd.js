@@ -68,15 +68,12 @@ const AnimalAdd = () => {
                                   name='name'
                                   placeholder='Pesho'
                         />
-
                         <label>Species:</label>
-
-                        <select className={'animal-add-species'}>
+                        <select name={'species'} className={'animal-add-species'}>
                             <option value="cat">cat</option>
                             <option value="dog">dog</option>
-                            <option value="other">other</option>
+                            <option value="others">others</option>
                         </select>
-
                         <label>Info:</label>
                         <textarea className={'animal-add-info'}
                                   name='info'

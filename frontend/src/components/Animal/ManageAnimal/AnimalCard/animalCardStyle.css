@@ -25,6 +25,7 @@
 
 .link {
   padding: 10px;
+  margin: 10px auto;
   border-radius: 30px;
   background: #6B705C;
   width: fit-content;

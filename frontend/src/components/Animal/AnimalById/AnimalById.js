@@ -10,7 +10,7 @@ const AnimalById = () => {
     ResetScroll();
     const formRef= useRef();
     const [file, setSelectedFile] = useState(null);
-
+    const [defaultSpecies, setDefaultSpecies] = useState();
     const handleFileChange = (event) => {
         setSelectedFile(event.target.files[0]);
     };
@@ -27,6 +27,7 @@ const AnimalById = () => {
             .then(data => {
                 setNames({username: sessionStorage.getItem('authenticatedUser'), user: data.createdBy})
                 setAnimal(data);
+                setDefaultSpecies(data.species)
             })
             .catch(err => err);
     }, [id.id]);
@@ -36,7 +37,7 @@ const AnimalById = () => {
         let form = new FormData(e.target);
         let name = form.get('name').trim();
         let info = form.get('info').trim();
-        let species = form.get('species').trim();
+        let species = form.get('species');
 
         if (!name || !info || !species) {
             seTFieldsCheck({allFields: true});
@@ -71,6 +72,9 @@ const AnimalById = () => {
         }
     }, [names, navigate])
 
+    function handleSetSpecies(e){
+        setDefaultSpecies(e.target.value)
+    }
 
     return (
         <>
@@ -85,6 +89,7 @@ const AnimalById = () => {
                     <input className={'edit-input name-edit'} name='name'
                            defaultValue={animal.name}/>
                     <label className={'read-head'}>species</label>
+                    <p>You can choose between cat, dog, others like species.</p>
                     <input className={'edit-input species'} name='species'
                            defaultValue={animal.species}/>
                     <label className={'read-head'}>info</label>
